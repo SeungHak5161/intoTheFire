@@ -1,0 +1,33 @@
+@import "./reset.css";
+@import "./animation.scss";
+
+button {
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+  &.systemBtn {
+    display: block;
+    font-size: 25px;
+    background-color: #769eca;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 150px;
+  }
+}
+
+.textLarge {
+  font-size: 30px;
+}
+
+.textMedium {
+  font-size: 20px;
+}
+
+.textBold {
+  font-weight: bold;
+}
+
+.switchScreen {
+  animation: fadeAwayToLeft 1s forwards;
+}

@@ -1,0 +1,59 @@
+#mainWrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #d2e0fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #gameBoardWrapper {
+    width: 800px;
+    height: 800px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    #gameBoard {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      // 게임 시작 전
+      #welcomeGif {
+        width: 300px;
+        height: 300px;
+      }
+      // 게임 중
+      #battleField {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        #airplane {
+          position: absolute;
+          width: 40px;
+          height: 40px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: all 0.1s;
+        }
+        .bullet {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background-color: red;
+          border-radius: 50%;
+          transition: all 0.1s linear;
+        }
+      }
+      // 게임 종료 후
+      .textGameOver {
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 0, 0, 0.8);
+        padding: 15px 20px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
